@@ -5,52 +5,92 @@
     <meta name="author" content="Dave Gray">
     <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
     <title> My First Web Page</title>
-    <link rel="icon" href="travel.png" type="image/x-icon">
+    <link rel="icon" href="image/travel.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <h1>Hello World!</h1>
+        <figure>
+            <img src="image/travel.png" alt="Travel Logo" title="Travel Logo" width="200" height="200">
+            <figcaption>
+                An example of a Travel Logo<br>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </figcaption>
+        </figure>
+
+        <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-naviagtion">Primary Navigation</h2>
+            <ul>
+                <li><a href="#Trip">First Abroad Trip</a></li>
+                <li><a href="#visits">Places I visited</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     <hr>
-
-    <h2>My First Abroad Trip</h1>
-    <p>My first foreign trip to Bangladesh</p>
-
-    <h3>My Daily Schedule</h2>
-    <p>Let me tell you how I spent each day:</p>
-        <ol>
-        <li>...I cleared immigration</li>
-        <li>...I met our connection</li>
-        <li>...We started towards our accomodation</li>
-        <li>...From <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org"> MDN</a></abbr></li>
-    </ol>
-
+    <main>
+        <article id="Trip">
+            <h2>My First Abroad Trip</h1>
+            <p>My first foreign trip to Bangladesh</p>
+            <section>
+                <h3>My Daily Schedule</h2>
+                <p>Let me tell you how I spent each day:</p>
+                <ol>
+                    <li>...I cleared immigration</li>
+                    <li>...I met our connection</li>
+                    <li>...We started towards our accomodation</li>
+                    <li>...From <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org" target="_blank"> MDN</a></abbr></li>
+                </ol>
+            </section>
+        </article>
     <hr>
 
-    <h2>What Did I Do?</h1>
-    <ul>
-    <li><p>I explored a lot of places in Dhaka</p></li>
-    <li><p>I went to the Bongobondhu Muesuem:</p></li>
-    </ul>
-    <address>
-        Bijoy Sarani,<br>
-        Dhaka 1215, <br>
-        Bangladesh
-    </address>
-    
-    <h3>Where Did I go?</h2>
-    <p>There are many places I visited</p>
+        <article id="visits">
+            <section>
+                <h2>What Did I Do?</h1>
+                    <ul>
+                        <li><p>I explored a lot of places in Dhaka</p>
+                        <figure>
+                            <img src="image/Dhaka.webp" alt="Dhaka Image" title="Image of Dhaka Skyline" width="550" height="300" loading="lazy">
+                        <figcaption>
+                        A image of Dhaka
+                        </figcaption>
+                        </figure>
+                        </li>
+                        <li><p>I went to the Bongobondhu Museum:</p></li>
+                    </ul>
+                    <address>
+                        Bijoy Sarani,<br>
+                        Dhaka 1215, <br>
+                        Bangladesh
+                    </address>
+                <aside>
+                    <details>
+                        <summary>Guess how many <mark>hours</mark> we slept every night?</summary>
+                
+                        <p>&nbsp;&nbsp;We slept at <time datetime="03:00">3 a.m.</time> for less than <time datetime="PT2H">2 hours</time></p>
+                    </details>
+                </aside>   
+            </section>
+            <h3>Where Did I go?</h2>
+            <p>There are many places I visited</p>
     
     <!--Add more places here-->
-    <h3> What places I didn't go?</h3>
-    <p>I didn't go to these places on my trip:</p>
-    <dl>
-        <dt>Chittagong</dt>
-            <dd>This is <strong>outside</strong> of Dhaka</dd>
-        <dt>Munshiganj</dt>
-            <dd>This is also <strong>outside</strong> of Dhaka</dd>
-    </dl>
+            <h3> What places I didn't go?</h3>
+            <p>I didn't go to these places on my trip:</p>
+            <dl>
+                <dt>Chittagong</dt>
+                    <dd>This is <strong>outside</strong> of Dhaka</dd>
+                <dt>Munshiganj</dt>
+                    <dd>This is also <strong>outside</strong> of Dhaka</dd>
+            </dl>
+        </article>
+    </main>
     <hr>
-    &lt;&lt;&lt;&copy;<a href="about.html">Raj Das</a>&gt;&gt;&gt;
+    <footer>
+        &lt;&lt;&lt;&copy;<a href="about.html">Raj Das</a>&gt;&gt;&gt;
+    </footer>   
 </body>
 </html>
